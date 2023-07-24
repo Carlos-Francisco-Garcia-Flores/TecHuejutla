@@ -1,0 +1,107 @@
+    /* Estilos del pie de página */
+    footer {
+      background-image:url('https://i.pinimg.com/originals/55/01/60/5501609ee45d514d1f2c4a63502045e2.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: rgba(5, 0, 108, 0.525);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    /* Estilos generales */  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  
+  /* Estilos de que somos */
+  #QueSomos {
+    display: flex;
+    background-position: center;
+    color: black;
+    text-align: center;
+  }
+  
+  .QueSomos-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .QueSomos-content h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: marqueeAnimation 10s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  @keyframes marqueeAnimation {
+    0% {
+      transform: translateX(90%);
+    }
+    50% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-90%);
+    }
+  }
+  .QueSomos-content h2::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 100%;
+    white-space: nowrap;
+    animation: marqueeAnimation 10s linear infinite;
+  }
+  
+
+  .QueSomos-content p {
+    font-size: 20px;
+  }
+  
+  /* Estilos de los datos de la empresa*/
+  .about-box {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.7s, transform 0.5s;
+    border-radius: 15px;
+  }
+  
+  .about-box:hover {
+    background-size:cover;
+    background-image: linear-gradient(to bottom right, #5e35b1, #ff6f00);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-color: rgba(5, 0, 108, 0.525);
+    transform: scale(1.1);
+  }
+  
+  .about-box:hover h3, .about-box:hover p {
+    color: #fefefe;
+    
+  }
+  
+  .about-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+  }
+  
+  .about-box p {
+    font-size: 20px;
+    line-height: 1.5;
+    transition: color 0.3s;
+  }
+  
+ 
+  
+
+  

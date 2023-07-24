@@ -1,0 +1,59 @@
+.containerForm1{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    border-radius: 15PX;
+    
+}
+
+
+
+fieldset{
+    padding: 9px;
+    margin-top: 1px;
+    border-style: ridge;
+    border-color: #050505ee;
+    background-color: black; 
+    border-radius: 15px;
+    font-size: medium;
+    opacity: 0.8;
+    text-align: center;
+    width: auto;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    
+}
+
+#button{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    size: 30px;
+    border-color: black;
+    border-style: solid;
+    color: black;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+
+    
+}
+.BTN{
+    border-radius: 10px;
+    
+
+  }
+  .BTN:hover {
+    color: white;
+    transform: scale(1.2);
+    
+  }
+label{
+    color: azure;
+}
+
+#TipoC{
+    width: 55%;
+}
